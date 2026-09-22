@@ -1,6 +1,6 @@
 const APP_CONFIG = {
     apkUrl: "https://github.com/iloveartvn/shortdramas/releases/download/1.3.4-gp/phimchieurap-STABLE-1.3.4.apk",
-    adsUrl: "https://omg10.com/4/10620462", // monetag.js
+    adsUrl: "https://omg10.com/4/10620537", // monetag.js
 };
 
 
