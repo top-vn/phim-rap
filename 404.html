@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 — Page Not Found</title>
+
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-614G39JCYW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-614G39JCYW');
+    </script>
+
+    <!-- monetag.js -->
+    <script src="https://quge5.com/88/tag.min.js" data-zone="278924" async data-cfasync="false"></script>
+
+    <style>
+        :root {
+            --white: #ffffff;
+            --red: #e21b1b;
+            --red-dark: #a30f0f;
+            --ink: #1a1414;
+            --ink-soft: #6b5f5f;
+            --line: #f0e3e3;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background: var(--white);
+            color: var(--ink);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ---------- Header (đồng bộ với trang danh sách video) ---------- */
+
+        .site-header {
+            background: var(--red);
+            padding: 22px 20px;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .site-header .mark {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--white);
+        }
+
+        .site-header .mark span {
+            color: var(--ink);
+            background: var(--white);
+            padding: 0 6px;
+            border-radius: 3px;
+        }
+
+        .site-header .tagline {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* ---------- Nội dung chính ---------- */
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .panel {
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Dải phim: dùng chấm tròn mô phỏng lỗ phim hai bên, gợi liên tưởng video */
+
+        .filmstrip {
+            position: relative;
+            padding: 26px 18px;
+            border-top: 2px dashed var(--line);
+            border-bottom: 2px dashed var(--line);
+            background-image:
+                radial-gradient(circle, var(--red) 3px, transparent 3px),
+                radial-gradient(circle, var(--red) 3px, transparent 3px);
+            background-size: 100% 22px;
+            background-position: top left, bottom left;
+            background-repeat: repeat-x;
+        }
+
+        .code {
+            font-size: 84px;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -2px;
+            color: var(--red);
+        }
+
+        .broken-play {
+            width: 64px;
+            height: 64px;
+            margin: 14px auto 4px;
+            border-radius: 50%;
+            border: 2px solid var(--red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .broken-play svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .broken-play::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 74px;
+            background: var(--red);
+            transform: rotate(45deg);
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 22px 0 8px;
+        }
+
+        p.desc {
+            font-size: 14px;
+            color: var(--ink-soft);
+            line-height: 1.6;
+            margin: 0 0 26px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .btn-primary {
+            background: var(--red);
+            color: var(--white);
+            border: 1px solid var(--red);
+        }
+
+        .btn-primary:hover {
+            background: var(--red-dark);
+            border-color: var(--red-dark);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--ink);
+            border: 1px solid var(--line);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--red);
+            color: var(--red);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: var(--ink-soft);
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="mark"><span>Video</span>List</div>
+    <div class="tagline">Watch videos online</div>
+</header>
+
+<main>
+    <div class="panel">
+
+        <div class="filmstrip">
+            <div class="code">404</div>
+
+            <div class="broken-play">
+                <svg viewBox="0 0 24 24" fill="#e21b1b"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+        </div>
+
+        <h1>Video not found</h1>
+        <p class="desc">
+            The page you're looking for may have been removed, renamed,
+            or the link is incorrect. Check the URL or head back to the video list.
+        </p>
+
+        <div class="actions">
+            <a class="btn btn-primary" href="https://vieon.space/videos.html">Browse videos</a>
+            <a class="btn btn-secondary" href="https://vieon.space/">Home</a>
+        </div>
+
+    </div>
+</main>
+
+<footer>Error code: 404 — Not Found</footer>
+
+</body>
+</html>
