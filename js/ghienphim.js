@@ -43,40 +43,6 @@ function openPlayStoreArticle(t, i, asPlay) {
     }
 };
 
-function openPlayStore() {
-
-    const params = new URLSearchParams(window.location.search);
-    const t = params.get("t");
-    const i = params.get("id");
-
-    let playStoreDeepLink = "shortdramas://videoinfo";
-    const query = new URLSearchParams();
-    if (t) { query.set("t", t); }
-    if (i) { query.set("id", i); }
-    if (query.toString()) {
-        playStoreDeepLink += "?" + query.toString();
-    }
-    var playStoreWeb = APP_CONFIG.apkUrl;
-
-    var ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    // var isAndroid = /android/i.test(ua);
-
-    // Detect Android
-    if (/android/i.test(ua)) {
-        window.location.href = playStoreDeepLink;
-
-        // fallback
-        setTimeout(function(){
-            window.location.href = playStoreWeb;
-        }, 1500);
-
-    } else {
-        // non-android → open web
-        window.location.href = playStoreWeb;
-    }
-};
-
 function downloadApk() {
 
     var playStoreWeb = APP_CONFIG.apkUrl;
