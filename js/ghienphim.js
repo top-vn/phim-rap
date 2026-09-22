@@ -12,7 +12,7 @@ function openPlayStoreArticle(t, i, asPlay) {
         if (i == null) { i = params.get("id"); }
     }
 
-    let playStoreDeepLink = "shortdramas://videoinfo";
+    let playStoreDeepLink = "shortdramas://phim-rap";
     const query = new URLSearchParams();
     if (t) { query.set("t", t); }
     if (i) { query.set("id", i); }

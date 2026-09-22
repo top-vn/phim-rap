@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.iloveart.idolhuyoppa",
+      "sha256_cert_fingerprints":
+        ["9B:1B:C1:69:2E:58:54:98:46:D6:71:FD:F5:B3:F2:A2:94:82:AA:9B:B6:80:50:FF:FB:63:8C:E1:69:A1:F6:D0"]
+    }
+  }
+]
