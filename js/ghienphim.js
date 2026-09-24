@@ -65,3 +65,13 @@ function openSongHyLamNguy(asPlay) {
     }
     openPlayStoreArticle('g', 'song-hy-lam-nguy', s);
 };
+
+function openMaXo(asPlay) {
+    var s = true;
+    if (asPlay == null) {
+        s = true;
+    } else {
+        s = asPlay;
+    }
+    openPlayStoreArticle('g', 'ma-xo', s);
+};
